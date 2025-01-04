@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <g id="flag">
+      <rect x="0" y="50%" width="100%" height="50%" class="earth"/>
+      <rect x="0" y="0" width="100%" height="50%" class="sky"/>
+      <circle cx="50%" cy="50%" r="20%" class="sun"/>
+    </g>
+    
+    <clipPath id="cut-circle">
+      <circle cx="50%" cy="50%" r="50%"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .sky { fill: var(--sky, black); }
+    .earth { fill: var(--earth, red); }
+    .sun { fill: var(--sun, yellow); }
+  </style>
+
+  <svg width="50%" height="50%" class="top-left"> 
+    <use href="#flag" clip-path="url(#cut-circle)"/>
+  </svg>
+
+  <svg x="50%" width="50%" height="50%" class="top-right"   clip-path="url(#cut-circle)"> 
+    <use href="#flag" style="--sky: blue; --earth: green; --sun: yellow"/>
+  </svg>
+
+  <svg y="50%" width="50%" height="50%" class="bottom-left"> 
+  <defs>
+    <clipPath id="cut-circle2">
+      <circle cx="50%" cy="50%" r="50%"/>
+    </clipPath>
+  </defs>
+    <use href="#flag" style="--sky: blue; --earth: red; --sun: white" clip-path="url(#cut-circle2)"/>
+  </svg>
+
+  <svg x="50%" y="50%" width="50%" height="50%" class="bottom-right"> 
+    <use href="#flag" style="--sky: yellow; --earth: red; --sun: orange"  clip-path="url(#cut-circle)"/>
+  </svg>
+
+</svg>
