@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <clipPath id="clipRect">
+      <rect x="25%" y="25%" width="50%" height="50%"/>
+    </clipPath>
+
+    <g id="flag">
+      <rect x="0" y="50%" width="100%" height="50%" class="earth"/>
+      <rect x="0" y="0" width="100%" height="50%" class="sky"/>
+      <circle cx="50%" cy="50%" r="20%" class="sun"/>
+    </g>
+
+    <g id="clippedFlag">
+      <use href="#flag" clip-path="url(#clipRect)"/>
+    </g>
+    
+  </defs>
+
+  <style>
+    .sky { fill: var(--sky, black); }
+    .earth { fill: var(--earth, red); }
+    .sun { fill: var(--sun, yellow); }
+  </style>
+
+  <g transform="scale(0.5)">
+    <use href="#clippedFlag"/>
+  </g>
+
+  <svg x="50%">
+    <g transform="scale(0.5)">
+      <use href="#clippedFlag" style="--sky: blue; --earth: green;"/>
+    </g>
+  </svg>
+
+
+  <svg y="50%">
+    <g transform="scale(0.5)">
+      <use href="#flag"/>
+    </g>
+  </svg>
+
+  <svg x="50%" y="50%">
+    <g transform="scale(0.5)">
+      <use href="#flag" style="--sky: blue; --earth: green;"/>
+    </g>
+  </svg>
+  
+
+</svg>
