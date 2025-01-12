@@ -4,6 +4,7 @@
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1",
-    "@types/d3": "npm:@types/d3@^7.4.3"
+    "@types/d3": "npm:@types/d3@^7.4.3",
+    "jsdom": "npm:jsdom@^26.0.0"
   }
 }
