@@ -1,8 +1,4 @@
-const startedStr = "10h00 2025_01_21"
-const endedStr = "10h30 2025_01_21"
-const startedStr1 = "12h45 2025_01_21"
-const endeddStr1 = "14h45 2025_01_21"
-
+const startedStr = "11h15 2025_01_20"
 
 import * as d3 from "npm:d3";
 import { JSDOM } from "npm:jsdom";
@@ -99,33 +95,24 @@ enterData.append('line')
 
 const barHeight = 30;
 
-function drawTime(startStr, endStr) {
-  const start = parseTime(startStr)
-  const end = parseTime(endStr)
-  svg.append('circle')
+svg.append('circle')
   .attr('r', '2%')
-  .attr('cx', xPc(start))
+  .attr('cx', xPc(started))
   .attr('cy', pc(barHeight))
   .attr('fill', 'red')
 
 svg.append('circle')
   .attr('r', '2%')
-  .attr('cx', xPc(end))
+  .attr('cx', xPc(now))
   .attr('cy', pc(barHeight))
   .attr('fill', 'red')
 
 svg.append('line')
-    .attr('x1', xPc(start))
-    .attr('x2', xPc(end))
+    .attr('x1', xPc(started))
+    .attr('x2', xPc(now))
     .attr('y1', pc(barHeight))
     .attr('y2', pc(barHeight))
     .attr('class', 'red-stroke')
-}
-
-drawTime(startedStr, endedStr)
-drawTime(startedStr1, endeddStr1)
-
-
 
 
 
