@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<style>
+  .sky { fill: hsl(from slategray h s l / 0.5); }
+  .mountains { fill: blue; }
+  .ground { fill: hsl(from darkblue h s l / 0.9); }
+  </style>
+  <rect class="sky" x="0%" y="0%" width="100%" height="100%"/>
+  <rect class="mountains" x="0%" y="33%" width="100%" height="100%">
+    <animate
+      attributeName="y"
+      values="33%;35%;33%;31%;33%"
+      dur="5s"
+      repeatCount="indefinite"
+    />  
+  </rect>
+  <rect class="ground" x="0%" y="66%" width="100%" height="100%">
+    <animate
+      attributeName="y"
+      values="66%;76%;66%;55%;66%"
+      dur="5s"
+      repeatCount="indefinite"
+    />
+  </rect>
+</svg>
