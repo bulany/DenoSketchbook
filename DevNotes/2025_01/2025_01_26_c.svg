@@ -1,0 +1,34 @@
+<svg width="640" height="480" viewBox="0 0 640 480" preserveAspectRatio="xMidYMid meet">
+  <!-- Rotating Plasma Background -->
+  <defs>
+    <linearGradient id="plasmaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="hsl(0, 100%, 50%)">
+        <animate attributeName="stop-color" values="hsl(0, 100%, 50%);hsl(120, 100%, 50%);hsl(240, 100%, 50%);hsl(0, 100%, 50%)" dur="5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="hsl(120, 100%, 50%)">
+        <animate attributeName="stop-color" values="hsl(120, 100%, 50%);hsl(240, 100%, 50%);hsl(0, 100%, 50%);hsl(120, 100%, 50%)" dur="5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="hsl(240, 100%, 50%)">
+        <animate attributeName="stop-color" values="hsl(240, 100%, 50%);hsl(0, 100%, 50%);hsl(120, 100%, 50%);hsl(240, 100%, 50%)" dur="5s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Apply rotation to the background -->
+  <rect width="640" height="480" fill="url(#plasmaGradient)">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 320 240"
+      to="360 320 240"
+      dur="20s"
+      repeatCount="indefinite"
+    />
+  </rect>
+
+  <!-- Scrolling Text -->
+  <text x="640" y="240" font-family="monospace" font-size="48" fill="white" text-anchor="middle">
+    Happy Birthday John
+    <animate attributeName="x" from="640" to="-640" dur="10s" repeatCount="indefinite" />
+  </text>
+</svg>

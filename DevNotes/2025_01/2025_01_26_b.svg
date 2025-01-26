@@ -1,0 +1,33 @@
+<svg width="640" height="480" viewBox="0 0 640 480" preserveAspectRatio="xMidYMid meet">
+  <!-- Plasma Background -->
+  <defs>
+    <linearGradient id="plasmaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="hsl(0, 100%, 50%)">
+        <animate attributeName="stop-color"
+          values="hsl(0, 100%, 50%);hsl(120, 100%, 50%);hsl(240, 100%, 50%);hsl(0, 100%, 50%)" dur="5s"
+          repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="hsl(120, 100%, 50%)">
+        <animate attributeName="stop-color"
+          values="hsl(120, 100%, 50%);hsl(240, 100%, 50%);hsl(0, 100%, 50%);hsl(120, 100%, 50%)" dur="5s"
+          repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="hsl(240, 100%, 50%)">
+        <animate attributeName="stop-color"
+          values="hsl(240, 100%, 50%);hsl(0, 100%, 50%);hsl(120, 100%, 50%);hsl(240, 100%, 50%)" dur="5s"
+          repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#plasmaGradient)" />
+
+  <!-- Scrolling Text -->
+  <text x="640" y="240" font-family="monospace" font-size="68" fill="white" text-anchor="middle">
+    Hello World
+    <animate attributeName="x" from="640" to="-640" dur="10s" repeatCount="indefinite" />
+  </text>
+</svg>
+<!--
+Deepseek R1 prompt 2:
+This looks really good... do you think you could modify it slightly to have a 90s VGA display aspect ratio and also add an animated line of text that says "Happy Birthday John" that looks like a 90s demo scroll effect ie the text starts off the 'screen' then it scrolls across the whole screen in a large font so only part of the phrase is visible (centered vertically) until the whole message has scrolled past then it starts again coming in from the left in an infinite loop...
+-->
