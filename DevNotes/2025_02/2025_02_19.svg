@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="480">
+  <style>
+    :root {
+      --portion: 45deg;
+      --portion-start: 45deg;
+      --darker: 30%;
+      --middle: 60%;
+      --lighter: 90%;
+
+    }
+
+    text {
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 140px
+    }
+    
+    .whiteFill {
+      fill: white;
+      stroke: white;
+      font-size: 145px;
+    }
+
+    .blackFill {
+      fill: black;
+      stroke: white;
+    }
+
+    tspan {
+      stroke-width: 0;
+    }
+    
+    tspan:nth-child(1) {
+      fill: hsl(calc((1 - 1)*(var(--portion)/6) + var(--portion-start)), 100%, var(--darker));  
+    }
+
+    tspan:nth-child(2) {
+      fill: hsl(calc((2 - 1)*(var(--portion)/6) + var(--portion-start)), 100%, var(--darker));    
+    }
+
+    tspan:nth-child(3) {
+      fill: hsl(calc((3 - 1)*(var(--portion)/6) + var(--portion-start)), 100%, var(--darker));    
+    }
+
+        tspan:nth-child(4) {
+      fill: hsl(calc((4 - 1)*(var(--portion)/6) + var(--portion-start)), 100%, var(--darker));    
+    }
+
+        tspan:nth-child(5) {
+      fill: hsl(calc((5 - 1)*(var(--portion)/6) + var(--portion-start)), 100%, var(--darker));    
+    }
+
+    tspan:nth-child(6) {
+      fill: hsl(calc((6 - 1)*(var(--portion)/6) + var(--portion-start)), 100%, var(--darker));    
+    }
+
+    .whiteFill tspan:nth-child(1) {
+      fill: hsl(calc((1 - 1)*(var(--portion)/6) + var(--portion-start)), 100%, var(--middle));    
+    }
+
+    .whiteFill tspan:nth-child(2) {
+      fill: hsl(calc((2 - 1)*(var(--portion)/6) + var(--portion-start)), 100%, var(--middle));    
+    }
+
+    .whiteFill tspan:nth-child(3) {
+      fill: hsl(calc((3 - 1)*(var(--portion)/6) + var(--portion-start)), 100%, var(--middle));    
+    }
+
+    .whiteFill tspan:nth-child(4) {
+      fill: hsl(calc((4 - 1)*(var(--portion)/6) + var(--portion-start)), 100%, var(--middle));    
+    }
+
+    .whiteFill tspan:nth-child(5) {
+      fill: hsl(calc((5 - 1)*(var(--portion)/6) + var(--portion-start)), 100%, var(--middle));    
+    }
+
+    .whiteFill tspan:nth-child(6) {
+      fill: hsl(calc((6 - 1)*(var(--portion)/6) + var(--portion-start)), 100%, var(--middle));    
+    }
+
+
+
+
+  </style>
+  
+  <!-- Plasma Background -->
+
+  <rect width="100%" height="100%" class="whiteFill"/>
+  <rect width="100%" height="50%" y="50%" class="blackFill" />
+
+
+  <text x="50%" y="37%" text-anchor="middle" class="blackFill">
+    <tspan>C</tspan><tspan>O</tspan><tspan>L</tspan><tspan>O</tspan><tspan>U</tspan><tspan>R</tspan>
+  </text>
+
+  <text x="50%" y="85%" text-anchor="middle" class="whiteFill">
+    <tspan>T</tspan><tspan>H</tspan><tspan>E</tspan><tspan>O</tspan><tspan>R</tspan><tspan>Y</tspan>
+  </text>
+</svg>
+<!--
+Deepseek R1 prompt 2:
+This looks really good... do you think you could modify it slightly to have a 90s VGA display aspect ratio and also add an animated line of text that says "Happy Birthday John" that looks like a 90s demo scroll effect ie the text starts off the 'screen' then it scrolls across the whole screen in a large font so only part of the phrase is visible (centered vertically) until the whole message has scrolled past then it starts again coming in from the left in an infinite loop...
+-->
