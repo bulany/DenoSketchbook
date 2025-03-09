@@ -2,7 +2,7 @@
   <style>
     :root {
       --portion: 30deg;
-      --portion-start: 135deg;
+      --portion-start: 150deg;
       --num-children: 9;
       --darker: 30%;
       --middle: 60%;
