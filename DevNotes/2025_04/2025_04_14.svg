@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="220">
+  <style>
+    :root {
+      --portion: 30deg;
+      --portion-start: 225deg;
+      --num-children: 9;
+      --darker: 50%;
+      --middle: 60%;
+      --lighter: 90%;
+
+    }
+
+    .borderframe {
+      fill: none;
+      stroke: black;
+    }
+
+    .plainwhite {
+      fill: white;
+    }
+
+    text {
+      font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      font-size: 100px
+    }
+
+    tspan:nth-child(1) {
+      fill: hsl(calc((1 - 1)*(var(--portion)/var(--num-children)) + var(--portion-start)), 100%, var(--darker));  
+    }
+
+    tspan:nth-child(2) {
+      fill: hsl(calc((2 - 1)*(var(--portion)/var(--num-children)) + var(--portion-start)), 100%, var(--darker));  
+    }
+
+    tspan:nth-child(3) {
+      fill: hsl(calc((3 - 1)*(var(--portion)/var(--num-children)) + var(--portion-start)), 100%, var(--darker));  
+    }
+
+    tspan:nth-child(4) {
+      fill: hsl(calc((4 - 1)*(var(--portion)/var(--num-children)) + var(--portion-start)), 100%, var(--darker));  
+    }
+
+    tspan:nth-child(5) {
+      fill: hsl(calc((5 - 1)*(var(--portion)/var(--num-children)) + var(--portion-start)), 100%, var(--darker));  
+    }
+
+    tspan:nth-child(6) {
+      fill: hsl(calc((6 - 1)*(var(--portion)/var(--num-children)) + var(--portion-start)), 100%, var(--darker));  
+    }
+
+    tspan:nth-child(7) {
+      fill: hsl(calc((7 - 1)*(var(--portion)/var(--num-children)) + var(--portion-start)), 100%, var(--darker));  
+    }
+
+    tspan:nth-child(8) {
+      fill: hsl(calc((8 - 1)*(var(--portion)/var(--num-children)) + var(--portion-start)), 100%, var(--darker));  
+    }
+
+    tspan:nth-child(9) {
+      fill: hsl(calc((9 - 1)*(var(--portion)/var(--num-children)) + var(--portion-start)), 100%, var(--darker));  
+    }
+    
+
+  </style>
+  
+  <rect class="plainwhite" width="100%" height="100%" />
+
+  <text x="50%" y="62%" text-anchor="middle" class="blackFill">
+    Everything is <tspan>v</tspan><tspan>i</tspan><tspan>b</tspan><tspan>r</tspan><tspan>a</tspan><tspan>t</tspan><tspan>i</tspan><tspan>o</tspan><tspan>n</tspan><tspan>.</tspan>
+  </text>
+
+
+</svg>
